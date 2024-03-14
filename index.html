@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Challenge-Alura</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;"><img src="material/Logo.png" class="logo"> Encriptador de texto.</h1>
+    </header>
+
+    <main>
+        <section>
+            <textarea cols="30" rows="7" class="texto-normal" placeholder="Introduce el texto que deseas encriptar..." required></textarea>
+            <div>
+                <h6 class="info">⚠ Solo letras minúsculas y sin acentos ⚠ </h6>
+            </div>
+
+            <div class="botones">
+                <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea cols="20" rows="7" class="texto-encript" placeholder=""></textarea>
+            <div>
+                <button class="boton-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="copyright">&copy; Hecho por Paola Troncoso - 2024</p>
+    </footer>
+
+    <script src="funcion.js"></script>
+
+</body>
+</html>

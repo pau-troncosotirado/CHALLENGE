@@ -1,0 +1,129 @@
+*{
+    background: aliceblue;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+body{
+    display: flexbox;
+    min-width: 300px;
+}
+
+header{
+    /* display: inline; */
+    display: inline;
+    margin: auto;
+}
+
+.logo{
+    margin-bottom: auto;
+}
+
+h1{
+    font-size: 35px;
+    margin: 10px 10px 10px 10px;
+}
+
+main{
+    display: flex;
+    margin: 20px 50px 0 50px;
+}
+
+.texto-normal{
+    border: none;
+    color: rgb(4, 33, 58);
+    margin-top: 20px;
+    text-transform: lowercase;
+    margin-right: 10px;
+    display: flex;
+}
+
+::placeholder { color:  rgb(4, 33, 58);}
+.texto-normal:focus{
+    outline: none;
+}
+
+.texto-encript{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 98px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-transform: lowercase;
+}
+
+.texto-encript:placeholder-shown{
+    background-image: url('material/Muñeco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.texto-encript:not(:placeholder-shown){
+    background-image: none;
+}
+
+.texto-encript:focus{
+    outline: none;
+}
+
+.info{
+    color: gray;
+    font-size: 13px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 15px;
+}
+
+.boton-encriptar{
+    border: 1px solid #8db3e1d0;
+    width: 328px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.boton-desencriptar{
+    border: 1px solid #8db3e1d0;
+    width: 328px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: lightgray;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    text-align: center;
+}
+
+.boton-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: aliceblue;
+    color: #0A3871;
+    cursor: pointer;
+    width: 336px;
+    height: 60px;
+    margin-left: 120px;
+    margin-top: 45px;
+    text-align: center;  
+}
+
+.copyright{
+    color: #0A3871;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
